@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.IO", "LibP2P.IO\LibP2P.IO.csproj", "{739C515D-F093-4961-B05A-14A1E6A01AFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61C0F90A-9394-4D0A-9ABE-8921C6BE6733}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.IO.Tests", "LibP2P.IO.Tests\LibP2P.IO.Tests.csproj", "{833BF4C5-0618-47ED-B48E-DEC16BFE420B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{739C515D-F093-4961-B05A-14A1E6A01AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739C515D-F093-4961-B05A-14A1E6A01AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739C515D-F093-4961-B05A-14A1E6A01AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739C515D-F093-4961-B05A-14A1E6A01AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{833BF4C5-0618-47ED-B48E-DEC16BFE420B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833BF4C5-0618-47ED-B48E-DEC16BFE420B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833BF4C5-0618-47ED-B48E-DEC16BFE420B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833BF4C5-0618-47ED-B48E-DEC16BFE420B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
