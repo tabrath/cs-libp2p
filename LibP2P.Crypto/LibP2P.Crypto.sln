@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.Crypto", "LibP2P.Crypto\LibP2P.Crypto.csproj", "{D8563E48-CA7B-4BA5-A29C-F3C2FBE60EE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.Crypto.Tests", "LibP2P.Crypto.Tests\LibP2P.Crypto.Tests.csproj", "{6C4D37BB-BFE2-4379-8EF8-DD75F0D70252}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0C1AEEA-08C7-4CAD-BC2E-7791F06389AF}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8563E48-CA7B-4BA5-A29C-F3C2FBE60EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8563E48-CA7B-4BA5-A29C-F3C2FBE60EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8563E48-CA7B-4BA5-A29C-F3C2FBE60EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8563E48-CA7B-4BA5-A29C-F3C2FBE60EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4D37BB-BFE2-4379-8EF8-DD75F0D70252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4D37BB-BFE2-4379-8EF8-DD75F0D70252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4D37BB-BFE2-4379-8EF8-DD75F0D70252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4D37BB-BFE2-4379-8EF8-DD75F0D70252}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

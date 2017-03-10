@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/tabrath/cs-libp2p-crypto/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/tabrath/cs-libp2p-crypto</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>WIP</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>libp2p crypto ed25519 rsa</tags>
+  </metadata>
+</package>
