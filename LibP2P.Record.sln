@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.Record", "LibP2P.Record\LibP2P.Record.csproj", "{F61800CC-BE74-432C-8E8B-A4A71B4B7D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibP2P.Record.Tests", "LibP2P.Record.Tests\LibP2P.Record.Tests.csproj", "{E2DFC2E2-CEDB-41CA-B54D-CB3450C73649}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{33702764-C590-44DF-B3F4-4D9E81B939DC}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F61800CC-BE74-432C-8E8B-A4A71B4B7D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61800CC-BE74-432C-8E8B-A4A71B4B7D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61800CC-BE74-432C-8E8B-A4A71B4B7D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61800CC-BE74-432C-8E8B-A4A71B4B7D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2DFC2E2-CEDB-41CA-B54D-CB3450C73649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2DFC2E2-CEDB-41CA-B54D-CB3450C73649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2DFC2E2-CEDB-41CA-B54D-CB3450C73649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2DFC2E2-CEDB-41CA-B54D-CB3450C73649}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
