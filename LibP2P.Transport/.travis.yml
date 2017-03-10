@@ -1,0 +1,13 @@
+language: csharp
+solution: LibP2P.Abstractions.Transport.sln
+branches:
+  only:
+   - master
+install:
+  - nuget restore LibP2P.Abstractions.Transport.sln -PackagesDirectory ./packages
+script:
+  - xbuild /p:Configuration=Release LibP2P.Abstractions.Transport.sln
+#  - mono ./packages/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./LibP2P.Abstractions.Transport.Tests/bin/Release/LibP2P.Abstractions.Transport.Tests.dll
+cache:
+  - directories:
+    - ./packages
