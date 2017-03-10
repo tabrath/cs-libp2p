@@ -1,0 +1,13 @@
+language: csharp
+solution: LibP2P.IO.sln
+branches:
+  only:
+   - master
+install:
+  - nuget restore LibP2P.IO.sln -PackagesDirectory ./packages
+script:
+  - xbuild /p:Configuration=Release LibP2P.IO.sln
+  - mono ./packages/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./LibP2P.IO.Tests/bin/Release/LibP2P.IO.Tests.dll
+cache:
+  - directories:
+    - ./packages
