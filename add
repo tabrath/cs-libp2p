@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [[ $# -ne 2 ]]; then
+	echo "usage: add name assembly"
+	exit 1
+fi
+
+NAME=$1
+USER=tabrath
+ASSEMBLY=$2
+BRANCH=master
+
+git remote add $NAME https://github.com/$USER/cs-$NAME
+git subtree add --squash --prefix=$ASSEMBLY/ $NAME $BRANCH
+
+

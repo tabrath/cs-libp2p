@@ -56,46 +56,6 @@
       <HintPath>..\packages\KeySpace.1.0.1\lib\net461\KeySpace.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="LibP2P.Abstractions.Connection, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Abstractions.Connection.1.0.1\lib\net461\LibP2P.Abstractions.Connection.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Crypto, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Crypto.1.0.3\lib\net461\LibP2P.Crypto.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Host, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Host.1.0.2\lib\net461\LibP2P.Host.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.IO, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.IO.1.0.4\lib\net461\LibP2P.IO.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Net, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Net.1.0.1\lib\net461\LibP2P.Net.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Peer, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Peer.1.0.2\lib\net461\LibP2P.Peer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Peer.Store, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Peer.Store.1.0.4\lib\net461\LibP2P.Peer.Store.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Protocol, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Protocol.1.0.1\lib\net461\LibP2P.Protocol.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Routing, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Routing.1.0.2\lib\net461\LibP2P.Routing.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Utilities, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Utilities.1.0.6\lib\net461\LibP2P.Utilities.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Multiformats.Address, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Multiformats.Address.1.0.9\lib\net45\Multiformats.Address.dll</HintPath>
       <Private>True</Private>
@@ -104,13 +64,11 @@
       <HintPath>..\packages\Multiformats.Base.1.0.34\lib\net45\Multiformats.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Multiformats.Codec, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Multiformats.Codec.1.0.5\lib\net461\Multiformats.Codec.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Multiformats.Codec, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Multiformats.Codec.1.0.7\lib\net461\Multiformats.Codec.dll</HintPath>
     </Reference>
-    <Reference Include="Multiformats.Hash, Version=1.0.19.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Multiformats.Hash.1.0.19\lib\net45\Multiformats.Hash.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Multiformats.Hash, Version=1.0.102.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Multiformats.Hash.1.0.102\lib\net461\Multiformats.Hash.dll</HintPath>
     </Reference>
     <Reference Include="Multiformats.Stream, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Multiformats.Stream.1.0.2\lib\net461\Multiformats.Stream.dll</HintPath>
@@ -145,6 +103,7 @@
       <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
@@ -178,6 +137,28 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibP2P.Host\LibP2P.Host\LibP2P.Host.csproj">
+      <Project>{d6b2054f-4374-4faf-ba80-491db29ef03c}</Project>
+      <Name>LibP2P.Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibP2P.Net\LibP2P.Net\LibP2P.Net.csproj">
+      <Project>{5fd5a81d-2301-4134-8e0d-bbd0c6008e1f}</Project>
+      <Name>LibP2P.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibP2P.Peer\LibP2P.Peer\LibP2P.Peer.csproj">
+      <Project>{d0cf6b9e-34ad-4d5e-aeec-f3df6ce3adc7}</Project>
+      <Name>LibP2P.Peer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibP2P.Protocol\LibP2P.Protocol\LibP2P.Protocol.csproj">
+      <Project>{ce416346-7955-4118-8d71-44d9077bce36}</Project>
+      <Name>LibP2P.Protocol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibP2P.Utils\LibP2P.Utilities\LibP2P.Utilities.csproj">
+      <Project>{d4741fe6-e836-4c4b-94d9-e1cec2704f62}</Project>
+      <Name>LibP2P.Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets" Condition="Exists('..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" />
