@@ -54,9 +54,8 @@
       <HintPath>..\..\packages\Multiformats.Base.1.0.34\lib\net45\Multiformats.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Multiformats.Hash">
-      <HintPath>..\..\..\packages\Multiformats.Hash.1.0.14\lib\net45\Multiformats.Hash.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Multiformats.Hash, Version=1.0.102.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Multiformats.Hash.1.0.102\lib\net461\Multiformats.Hash.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <HintPath>..\..\packages\protobuf-net.2.1.0\lib\net451\protobuf-net.dll</HintPath>
@@ -71,6 +70,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
@@ -100,6 +100,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LibP2P.Utils\LibP2P.Utilities\LibP2P.Utilities.csproj">
+      <Project>{d4741fe6-e836-4c4b-94d9-e1cec2704f62}</Project>
+      <Name>LibP2P.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!--<Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -111,7 +117,7 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
-  <Import Project="..\..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets" Condition="Exists('..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" />
+  <Import Project="..\..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets" Condition="Exists('..\..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>

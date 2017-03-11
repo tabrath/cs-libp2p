@@ -52,9 +52,8 @@
       <HintPath>..\..\packages\Multiformats.Base.1.0.34\lib\net45\Multiformats.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Multiformats.Hash, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Multiformats.Hash.1.0.14\lib\net45\Multiformats.Hash.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Multiformats.Hash, Version=1.0.102.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Multiformats.Hash.1.0.102\lib\net461\Multiformats.Hash.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <HintPath>..\..\packages\protobuf-net.2.1.0\lib\net451\protobuf-net.dll</HintPath>
@@ -64,11 +63,11 @@
       <HintPath>..\..\packages\SimpleBase.1.2.0\lib\net45\SimpleBase.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sodium, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\libsodium-net.0.9.0\lib\Net40\Sodium.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sodium, Version=0.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\libsodium-net.0.10.0\lib\Net40\Sodium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
     <Reference Include="WallF.BaseNEncodings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -88,13 +87,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\LibP2P.Abstractions.Connection\LibP2P.Abstractions.Connection\LibP2P.Abstractions.Connection.csproj">
+      <Project>{9f147488-2471-4a90-8824-9e5f899c910b}</Project>
+      <Name>LibP2P.Abstractions.Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibP2P.IO\LibP2P.IO\LibP2P.IO.csproj">
+      <Project>{739c515d-f093-4961-b05a-14a1e6a01afe}</Project>
+      <Name>LibP2P.IO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\LibP2P.Net\LibP2P.Net\LibP2P.Net.csproj">
       <Project>{5fd5a81d-2301-4134-8e0d-bbd0c6008e1f}</Project>
       <Name>LibP2P.Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\LibP2P.Transport.Tcp\LibP2P.Transport.Tcp\LibP2P.Transport.Tcp.csproj">
-      <Project>{880385e3-df4e-4730-b5b5-c41bbfe22e88}</Project>
-      <Name>LibP2P.Transport.Tcp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

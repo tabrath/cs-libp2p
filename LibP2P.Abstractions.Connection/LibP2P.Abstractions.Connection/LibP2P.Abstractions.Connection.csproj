@@ -34,61 +34,44 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BinaryEncoding, Version=1.2.8.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BinaryEncoding.1.2.8\lib\net45\BinaryEncoding.dll</HintPath>
+      <HintPath>..\..\packages\BinaryEncoding.1.2.8\lib\net45\BinaryEncoding.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Blake2s, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\blake2s-net.0.1.0\lib\net\Blake2s.dll</HintPath>
+      <HintPath>..\..\packages\blake2s-net.0.1.0\lib\net\Blake2s.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Crypto, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Crypto.1.0.2\lib\net461\LibP2P.Crypto.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.IO, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.IO.1.0.3\lib\net461\LibP2P.IO.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Peer, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Peer.1.0.2\lib\net461\LibP2P.Peer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LibP2P.Utilities, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibP2P.Utilities.1.0.5\lib\net461\LibP2P.Utilities.dll</HintPath>
+      <HintPath>..\..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Multiformats.Address, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Multiformats.Address.1.0.9\lib\net45\Multiformats.Address.dll</HintPath>
+      <HintPath>..\..\packages\Multiformats.Address.1.0.9\lib\net45\Multiformats.Address.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Multiformats.Base, Version=1.0.34.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Multiformats.Base.1.0.34\lib\net45\Multiformats.Base.dll</HintPath>
+      <HintPath>..\..\packages\Multiformats.Base.1.0.34\lib\net45\Multiformats.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Multiformats.Hash, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Multiformats.Hash.1.0.14\lib\net45\Multiformats.Hash.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Multiformats.Hash, Version=1.0.102.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Multiformats.Hash.1.0.102\lib\net461\Multiformats.Hash.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <HintPath>..\packages\protobuf-net.2.1.0\lib\net451\protobuf-net.dll</HintPath>
+      <HintPath>..\..\packages\protobuf-net.2.1.0\lib\net451\protobuf-net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SimpleBase, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleBase.1.2.0\lib\net45\SimpleBase.dll</HintPath>
+      <HintPath>..\..\packages\SimpleBase.1.2.0\lib\net45\SimpleBase.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sodium, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\libsodium-net.0.9.0\lib\Net40\Sodium.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sodium, Version=0.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\libsodium-net.0.10.0\lib\Net40\Sodium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="WallF.BaseNEncodings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WallF.BaseNEncodings.1.0.0.0\lib\net20\WallF.BaseNEncodings.dll</HintPath>
+      <HintPath>..\..\packages\WallF.BaseNEncodings.1.0.0.0\lib\net20\WallF.BaseNEncodings.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -108,19 +91,37 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LibP2P.Crypto\LibP2P.Crypto\LibP2P.Crypto.csproj">
+      <Project>{d8563e48-ca7b-4ba5-a29c-f3c2fbe60ee8}</Project>
+      <Name>LibP2P.Crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibP2P.IO\LibP2P.IO\LibP2P.IO.csproj">
+      <Project>{739c515d-f093-4961-b05a-14a1e6a01afe}</Project>
+      <Name>LibP2P.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibP2P.Peer\LibP2P.Peer\LibP2P.Peer.csproj">
+      <Project>{d0cf6b9e-34ad-4d5e-aeec-f3df6ce3adc7}</Project>
+      <Name>LibP2P.Peer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibP2P.Utils\LibP2P.Utilities\LibP2P.Utilities.csproj">
+      <Project>{d4741fe6-e836-4c4b-94d9-e1cec2704f62}</Project>
+      <Name>LibP2P.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets" Condition="Exists('..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" />
+  <Import Project="..\..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets" Condition="Exists('..\..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Baseclass.Contrib.Nuget.Output.2.1.0\build\net40\Baseclass.Contrib.Nuget.Output.targets'))" />
   </Target>
   <PropertyGroup>
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

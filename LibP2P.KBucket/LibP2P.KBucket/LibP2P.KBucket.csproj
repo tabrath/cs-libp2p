@@ -56,9 +56,8 @@
       <HintPath>..\..\packages\Multiformats.Base.1.0.34\lib\net45\Multiformats.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Multiformats.Hash, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Multiformats.Hash.1.0.14\lib\net45\Multiformats.Hash.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Multiformats.Hash, Version=1.0.102.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Multiformats.Hash.1.0.102\lib\net461\Multiformats.Hash.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -72,11 +71,11 @@
       <HintPath>..\..\packages\SimpleBase.1.2.0\lib\net45\SimpleBase.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sodium, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\libsodium-net.0.9.0\lib\Net40\Sodium.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sodium, Version=0.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\libsodium-net.0.10.0\lib\Net40\Sodium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="WallF.BaseNEncodings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

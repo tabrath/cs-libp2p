@@ -44,13 +44,11 @@
       <HintPath>..\..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Multiformats.Base, Version=1.0.33.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Multiformats.Base.1.0.33\lib\net45\Multiformats.Base.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Multiformats.Base, Version=1.0.34.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Multiformats.Base.1.0.34\lib\net45\Multiformats.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Multiformats.Hash, Version=1.0.12.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Multiformats.Hash.1.0.12\lib\net45\Multiformats.Hash.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Multiformats.Hash, Version=1.0.102.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Multiformats.Hash.1.0.102\lib\net461\Multiformats.Hash.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <HintPath>..\..\packages\protobuf-net.2.1.0\lib\net451\protobuf-net.dll</HintPath>
@@ -60,11 +58,11 @@
       <HintPath>..\..\packages\SimpleBase.1.2.0\lib\net45\SimpleBase.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sodium, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\libsodium-net.0.9.0\lib\Net40\Sodium.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sodium, Version=0.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\libsodium-net.0.10.0\lib\Net40\Sodium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="WallF.BaseNEncodings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
